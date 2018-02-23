@@ -1,6 +1,6 @@
 //
 //  NetworkUtils.swift
-//  WeatherStation
+//  Simple Network Status Checker
 //
 //  Created by Mark Filter on 2/17/18.
 //  Copyright © 2018 Mark Filter. All rights reserved.
@@ -26,8 +26,8 @@ import UIKit
 class NetworkUtils {
     
     internal static let TAG : String = "NetworkUtils.TAG"
-    static let opt_check_connection_url : URL? = URL.init(string: "https://www.google.com/")
-    public static let resourceDomain : String = "90acf95e.ngrok.io"
+    static var opt_check_connection_url : URL? = URL.init(string: "https://www.google.com/")
+    
     
     /**
      Checks network connectivity by making a request to the domain's server. Handles alerting the user to connection issues.
@@ -36,8 +36,8 @@ class NetworkUtils {
      - Author: Mark Filter
      */
     
-    internal static func checkConnection(viewController: UIViewController, completion: ((_ alertController: UIAlertController, _ hasInternetConnection: Bool) -> (Void))?) {
-        
+    internal static func checkConnection(viewController: UIViewController, urlString: String, completion: ((_ alertController: UIAlertController, _ hasInternetConnection: Bool) -> (Void))?) {
+        opt_check_connection_url = URL.init(string: urlString)
         var errorMessage = ""
         
         // MARK: - ErrorCode 501
@@ -48,7 +48,10 @@ class NetworkUtils {
             alertController.title = "No Internet Connection"
             alertController.message = errorMessage
             alertController.addAction(UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            completion?(alertController, false)
+            DispatchQueue.main.async {
+                completion?(alertController, false)
+            }
+            
             return
         }
         
@@ -63,7 +66,9 @@ class NetworkUtils {
                 alertController.title = "No Internet Connection"
                 alertController.message = errorMessage
                 alertController.addAction(UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                completion?(alertController, false)
+                DispatchQueue.main.async {
+                    completion?(alertController, false)
+                }
             }
             
             // MARK: - ErrorCode 503
@@ -75,7 +80,9 @@ class NetworkUtils {
                     alertController.title = "No Internet Connection"
                     alertController.message = errorMessage
                     alertController.addAction(UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                    completion?(alertController, false)
+                    DispatchQueue.main.async {
+                        completion?(alertController, false)
+                    }
                     return
             }
             
@@ -85,73 +92,33 @@ class NetworkUtils {
                 alertController.title = "Connected"
                 alertController.message = errorMessage
                 alertController.addAction(UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                completion?(alertController, true)
+                DispatchQueue.main.async {
+                    completion?(alertController, true)
+                }
                 break
             case 500:
                 let alertController = UIAlertController.init()
                 alertController.title = "Degraded Internet Connection"
                 alertController.message = "You are connected to the internet, but the server is not responding."
                 alertController.addAction(UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                completion?(alertController, false)
+                DispatchQueue.main.async {
+                    completion?(alertController, false)
+                }
                 break
             default:
                 let alertController = UIAlertController.init()
                 alertController.title = "No Internet Connection"
                 alertController.message = "Please check your internet connection and try again."
                 alertController.addAction(UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                completion?(alertController, false)
+                DispatchQueue.main.async {
+                    completion?(alertController, false)
+                }
                 break
             }
             
         }
         getData.resume()
         
-    }
-    
-    
-    /**
-     Fetches Image data from the requested URL and returns the UIImage via the delegate method.
-     - Parameters:
-     - requestUrl: The URL of the request.
-     - delegate: The context registered for receiving callbacks.
-     - Author: Mark Filter
-     */
-    internal static func fetchImageFrom(url: URL, completion: @escaping ((_ image: UIImage?) -> (Void))) {
-        var secureURL : URL = url
-        if url.scheme == "http" {
-            Log.i(TAG: TAG, message: "url.scheme = \(url.scheme ?? "no scheme")" )
-            Log.i(TAG: TAG, message: "url.host = \(url.host ?? "no host")" )
-            Log.i(TAG: TAG, message: "url.relativePath = \(url.relativePath)" )
-            let secureURLString : String = "https://" + url.host! + "/" + url.relativePath
-            secureURL = URL.init(string: secureURLString)!
-        }
-        
-        let getData = URLSession.shared.dataTask(with: secureURL, completionHandler: { (opt_data, opt_response, opt_error) in
-            
-            if let error = opt_error {
-                Log.d(TAG: self.TAG, message: error.localizedDescription)
-                return
-            }
-            guard let httpResponse = opt_response as? HTTPURLResponse,
-                httpResponse.statusCode == 200,
-                let validData = opt_data
-                else {
-                    Log.d(TAG: self.TAG, message: "Data was invalid")
-                    return
-                    
-            }
-            
-            
-            if let image = UIImage.init(data: validData) {
-                completion(image)
-            }
-            else {
-                completion(nil)
-            }
-            
-            
-        })
-        getData.resume()
     }
     
 }

@@ -1,6 +1,6 @@
 //
 //  ConsoleUtils.swift
-//  WeatherStation
+//  Simple Network Status Checker
 //
 //  Created by Mark Filter on 2/16/18.
 //  Copyright © 2018 Mark Filter. All rights reserved.

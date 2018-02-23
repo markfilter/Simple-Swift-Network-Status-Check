@@ -26,11 +26,13 @@ class ViewController: UIViewController {
     @IBOutlet var lbl_resultsLabel: UILabel!
     @IBOutlet var tf_targetUrlTextField: UITextField!
     @IBOutlet var btn_CheckStatusButton: UIButton!
+    var targetURLString : String = ""
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        registerTextFieldDelegate()
         disableButton()
     }
 
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        NetworkUtils.checkConnection(viewController: self) { (alertController, isConnected) -> (Void) in
+        NetworkUtils.checkConnection(viewController: self, urlString: "https://www.google.com/") { (alertController, isConnected) -> (Void) in
             if isConnected {
                 self.lbl_resultsLabel.text = "Connected successfully!"
             }
@@ -51,11 +53,18 @@ class ViewController: UIViewController {
         }
     }
     
+    // Sets status bar to indicated style
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent 
+    }
+    
     // MARK: - Actions
     
     @IBAction func buttonCheckStatusTapped(_ sender: UIButton) {
         if btn_CheckStatusButton.isEnabled == true {
-            NetworkUtils.checkConnection(viewController: self) { (alertController, isConnected) -> (Void) in
+            lbl_resultsLabel.text = "Checking " + targetURLString
+            Log.d(TAG: "buttonCheckStatusTapped", message: targetURLString)
+            NetworkUtils.checkConnection(viewController: self, urlString: targetURLString) { (alertController, isConnected) -> (Void) in
                 if isConnected {
                     self.lbl_resultsLabel.text = "Connected successfully!"
                 }
@@ -80,5 +89,33 @@ class ViewController: UIViewController {
         btn_CheckStatusButton.isEnabled = false
     }
 
+}
+
+extension ViewController : UITextFieldDelegate {
+    
+    func registerTextFieldDelegate() {
+        tf_targetUrlTextField.delegate = self
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        
+        if tf_targetUrlTextField.text == "" {
+            self.disableButton()
+        }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let urlStringInput = textField.text! + string
+        Log.i(TAG: "textField.shouldChangeCharactersIn", message: urlStringInput)
+        targetURLString = urlStringInput
+        
+        if urlStringInput != "" && self.btn_CheckStatusButton.isEnabled == false {
+            self.enableButton()
+            targetURLString = urlStringInput
+        }
+        
+        return true
+    }
 }
 
