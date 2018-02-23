@@ -42,6 +42,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonCheckStatusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rK7-gL-qdZ"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter a valid URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nEk-A1-6Qh">
                                         <rect key="frame" x="24" y="45" width="327" height="30"/>

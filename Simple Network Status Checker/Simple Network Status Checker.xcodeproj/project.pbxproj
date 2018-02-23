@@ -14,6 +14,7 @@
 		712C88402040801500FB42F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C883E2040801500FB42F6 /* LaunchScreen.storyboard */; };
 		712C884B2040801500FB42F6 /* Simple_Network_Status_CheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C884A2040801500FB42F6 /* Simple_Network_Status_CheckerTests.swift */; };
 		712C88562040801500FB42F6 /* Simple_Network_Status_CheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C88552040801500FB42F6 /* Simple_Network_Status_CheckerUITests.swift */; };
+		712C8865204090BB00FB42F6 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C8864204090BB00FB42F6 /* NetworkUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		712C88512040801500FB42F6 /* Simple Network Status CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Network Status CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712C88552040801500FB42F6 /* Simple_Network_Status_CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Network_Status_CheckerUITests.swift; sourceTree = "<group>"; };
 		712C88572040801500FB42F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712C8864204090BB00FB42F6 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		712C88342040801500FB42F6 /* Simple Network Status Checker */ = {
 			isa = PBXGroup;
 			children = (
+				712C88632040908300FB42F6 /* Utils */,
 				712C88352040801500FB42F6 /* AppDelegate.swift */,
 				712C88372040801500FB42F6 /* ViewController.swift */,
 				712C88392040801500FB42F6 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				712C88572040801500FB42F6 /* Info.plist */,
 			);
 			path = "Simple Network Status CheckerUITests";
+			sourceTree = "<group>";
+		};
+		712C88632040908300FB42F6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				712C8864204090BB00FB42F6 /* NetworkUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712C88382040801500FB42F6 /* ViewController.swift in Sources */,
+				712C8865204090BB00FB42F6 /* NetworkUtils.swift in Sources */,
 				712C88362040801500FB42F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
