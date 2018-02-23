@@ -7,9 +7,9 @@ Use the method to send a simple request to the target server to determine if the
 ### Checks Server Connection & Handles Error Messaging
 ![Gif image showing network connection check 1](https://github.com/markfilter/Simple-Swift-Network-Status-Check/blob/master/images/IMB_k6BOqv.GIF)
 
-![Gif image showing network connection check 1](https://github.com/markfilter/Simple-Swift-Network-Status-Check/blob/master/images/IMB_ECs1Rf.GIF)
+![Gif image showing network connection check 2](https://github.com/markfilter/Simple-Swift-Network-Status-Check/blob/master/images/IMB_ECs1Rf.GIF)
 
-![Gif image showing network connection check 1](https://github.com/markfilter/Simple-Swift-Network-Status-Check/blob/master/images/IMB_ACwBbp.GIF)
+![Gif image showing network connection check 3](https://github.com/markfilter/Simple-Swift-Network-Status-Check/blob/master/images/IMB_ACwBbp.GIF)
 
 
 ## License
