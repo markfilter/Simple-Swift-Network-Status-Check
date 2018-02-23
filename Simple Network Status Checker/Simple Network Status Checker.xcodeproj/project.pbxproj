@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		712C88362040801500FB42F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C88352040801500FB42F6 /* AppDelegate.swift */; };
+		712C88382040801500FB42F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C88372040801500FB42F6 /* ViewController.swift */; };
+		712C883B2040801500FB42F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C88392040801500FB42F6 /* Main.storyboard */; };
+		712C883D2040801500FB42F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712C883C2040801500FB42F6 /* Assets.xcassets */; };
+		712C88402040801500FB42F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712C883E2040801500FB42F6 /* LaunchScreen.storyboard */; };
+		712C884B2040801500FB42F6 /* Simple_Network_Status_CheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C884A2040801500FB42F6 /* Simple_Network_Status_CheckerTests.swift */; };
+		712C88562040801500FB42F6 /* Simple_Network_Status_CheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C88552040801500FB42F6 /* Simple_Network_Status_CheckerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		712C88472040801500FB42F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 712C882A2040801500FB42F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 712C88312040801500FB42F6;
+			remoteInfo = "Simple Network Status Checker";
+		};
+		712C88522040801500FB42F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 712C882A2040801500FB42F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 712C88312040801500FB42F6;
+			remoteInfo = "Simple Network Status Checker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		712C88322040801500FB42F6 /* Simple Network Status Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Network Status Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		712C88352040801500FB42F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		712C88372040801500FB42F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		712C883A2040801500FB42F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		712C883C2040801500FB42F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		712C883F2040801500FB42F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		712C88412040801500FB42F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712C88462040801500FB42F6 /* Simple Network Status CheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Network Status CheckerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		712C884A2040801500FB42F6 /* Simple_Network_Status_CheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Network_Status_CheckerTests.swift; sourceTree = "<group>"; };
+		712C884C2040801500FB42F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712C88512040801500FB42F6 /* Simple Network Status CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Network Status CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		712C88552040801500FB42F6 /* Simple_Network_Status_CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Network_Status_CheckerUITests.swift; sourceTree = "<group>"; };
+		712C88572040801500FB42F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		712C882F2040801500FB42F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712C88432040801500FB42F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712C884E2040801500FB42F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		712C88292040801500FB42F6 = {
+			isa = PBXGroup;
+			children = (
+				712C88342040801500FB42F6 /* Simple Network Status Checker */,
+				712C88492040801500FB42F6 /* Simple Network Status CheckerTests */,
+				712C88542040801500FB42F6 /* Simple Network Status CheckerUITests */,
+				712C88332040801500FB42F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		712C88332040801500FB42F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				712C88322040801500FB42F6 /* Simple Network Status Checker.app */,
+				712C88462040801500FB42F6 /* Simple Network Status CheckerTests.xctest */,
+				712C88512040801500FB42F6 /* Simple Network Status CheckerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		712C88342040801500FB42F6 /* Simple Network Status Checker */ = {
+			isa = PBXGroup;
+			children = (
+				712C88352040801500FB42F6 /* AppDelegate.swift */,
+				712C88372040801500FB42F6 /* ViewController.swift */,
+				712C88392040801500FB42F6 /* Main.storyboard */,
+				712C883C2040801500FB42F6 /* Assets.xcassets */,
+				712C883E2040801500FB42F6 /* LaunchScreen.storyboard */,
+				712C88412040801500FB42F6 /* Info.plist */,
+			);
+			path = "Simple Network Status Checker";
+			sourceTree = "<group>";
+		};
+		712C88492040801500FB42F6 /* Simple Network Status CheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				712C884A2040801500FB42F6 /* Simple_Network_Status_CheckerTests.swift */,
+				712C884C2040801500FB42F6 /* Info.plist */,
+			);
+			path = "Simple Network Status CheckerTests";
+			sourceTree = "<group>";
+		};
+		712C88542040801500FB42F6 /* Simple Network Status CheckerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				712C88552040801500FB42F6 /* Simple_Network_Status_CheckerUITests.swift */,
+				712C88572040801500FB42F6 /* Info.plist */,
+			);
+			path = "Simple Network Status CheckerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		712C88312040801500FB42F6 /* Simple Network Status Checker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712C885A2040801500FB42F6 /* Build configuration list for PBXNativeTarget "Simple Network Status Checker" */;
+			buildPhases = (
+				712C882E2040801500FB42F6 /* Sources */,
+				712C882F2040801500FB42F6 /* Frameworks */,
+				712C88302040801500FB42F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Network Status Checker";
+			productName = "Simple Network Status Checker";
+			productReference = 712C88322040801500FB42F6 /* Simple Network Status Checker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		712C88452040801500FB42F6 /* Simple Network Status CheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712C885D2040801500FB42F6 /* Build configuration list for PBXNativeTarget "Simple Network Status CheckerTests" */;
+			buildPhases = (
+				712C88422040801500FB42F6 /* Sources */,
+				712C88432040801500FB42F6 /* Frameworks */,
+				712C88442040801500FB42F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				712C88482040801500FB42F6 /* PBXTargetDependency */,
+			);
+			name = "Simple Network Status CheckerTests";
+			productName = "Simple Network Status CheckerTests";
+			productReference = 712C88462040801500FB42F6 /* Simple Network Status CheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		712C88502040801500FB42F6 /* Simple Network Status CheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712C88602040801500FB42F6 /* Build configuration list for PBXNativeTarget "Simple Network Status CheckerUITests" */;
+			buildPhases = (
+				712C884D2040801500FB42F6 /* Sources */,
+				712C884E2040801500FB42F6 /* Frameworks */,
+				712C884F2040801500FB42F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				712C88532040801500FB42F6 /* PBXTargetDependency */,
+			);
+			name = "Simple Network Status CheckerUITests";
+			productName = "Simple Network Status CheckerUITests";
+			productReference = 712C88512040801500FB42F6 /* Simple Network Status CheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		712C882A2040801500FB42F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Mark Filter";
+				TargetAttributes = {
+					712C88312040801500FB42F6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					712C88452040801500FB42F6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 712C88312040801500FB42F6;
+					};
+					712C88502040801500FB42F6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 712C88312040801500FB42F6;
+					};
+				};
+			};
+			buildConfigurationList = 712C882D2040801500FB42F6 /* Build configuration list for PBXProject "Simple Network Status Checker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 712C88292040801500FB42F6;
+			productRefGroup = 712C88332040801500FB42F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				712C88312040801500FB42F6 /* Simple Network Status Checker */,
+				712C88452040801500FB42F6 /* Simple Network Status CheckerTests */,
+				712C88502040801500FB42F6 /* Simple Network Status CheckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		712C88302040801500FB42F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712C88402040801500FB42F6 /* LaunchScreen.storyboard in Resources */,
+				712C883D2040801500FB42F6 /* Assets.xcassets in Resources */,
+				712C883B2040801500FB42F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712C88442040801500FB42F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712C884F2040801500FB42F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		712C882E2040801500FB42F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712C88382040801500FB42F6 /* ViewController.swift in Sources */,
+				712C88362040801500FB42F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712C88422040801500FB42F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712C884B2040801500FB42F6 /* Simple_Network_Status_CheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712C884D2040801500FB42F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712C88562040801500FB42F6 /* Simple_Network_Status_CheckerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		712C88482040801500FB42F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 712C88312040801500FB42F6 /* Simple Network Status Checker */;
+			targetProxy = 712C88472040801500FB42F6 /* PBXContainerItemProxy */;
+		};
+		712C88532040801500FB42F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 712C88312040801500FB42F6 /* Simple Network Status Checker */;
+			targetProxy = 712C88522040801500FB42F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		712C88392040801500FB42F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				712C883A2040801500FB42F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		712C883E2040801500FB42F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				712C883F2040801500FB42F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		712C88582040801500FB42F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		712C88592040801500FB42F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		712C885B2040801500FB42F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 983HR6B2Z8;
+				INFOPLIST_FILE = "Simple Network Status Checker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markzfilter.Simple-Network-Status-Checker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		712C885C2040801500FB42F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 983HR6B2Z8;
+				INFOPLIST_FILE = "Simple Network Status Checker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markzfilter.Simple-Network-Status-Checker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		712C885E2040801500FB42F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 983HR6B2Z8;
+				INFOPLIST_FILE = "Simple Network Status CheckerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markzfilter.Simple-Network-Status-CheckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Network Status Checker.app/Simple Network Status Checker";
+			};
+			name = Debug;
+		};
+		712C885F2040801500FB42F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 983HR6B2Z8;
+				INFOPLIST_FILE = "Simple Network Status CheckerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markzfilter.Simple-Network-Status-CheckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Network Status Checker.app/Simple Network Status Checker";
+			};
+			name = Release;
+		};
+		712C88612040801500FB42F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 983HR6B2Z8;
+				INFOPLIST_FILE = "Simple Network Status CheckerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markzfilter.Simple-Network-Status-CheckerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Simple Network Status Checker";
+			};
+			name = Debug;
+		};
+		712C88622040801500FB42F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 983HR6B2Z8;
+				INFOPLIST_FILE = "Simple Network Status CheckerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markzfilter.Simple-Network-Status-CheckerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Simple Network Status Checker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		712C882D2040801500FB42F6 /* Build configuration list for PBXProject "Simple Network Status Checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712C88582040801500FB42F6 /* Debug */,
+				712C88592040801500FB42F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712C885A2040801500FB42F6 /* Build configuration list for PBXNativeTarget "Simple Network Status Checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712C885B2040801500FB42F6 /* Debug */,
+				712C885C2040801500FB42F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712C885D2040801500FB42F6 /* Build configuration list for PBXNativeTarget "Simple Network Status CheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712C885E2040801500FB42F6 /* Debug */,
+				712C885F2040801500FB42F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712C88602040801500FB42F6 /* Build configuration list for PBXNativeTarget "Simple Network Status CheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712C88612040801500FB42F6 /* Debug */,
+				712C88622040801500FB42F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 712C882A2040801500FB42F6 /* Project object */;
+}
