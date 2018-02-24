@@ -1,0 +1,3 @@
+language: swift
+xcode_project: Simple Network Status Checker.xcodeproj # path to your xcodeproj folder
+xcode_scheme: Simple Network Status CheckerTests
